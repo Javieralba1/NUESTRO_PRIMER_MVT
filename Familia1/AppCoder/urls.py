@@ -1,14 +1,13 @@
-from django.urls import URLPattern, path
-from AppCoder import views
-
+from django.urls import  path
+from AppCoder.views import Mama,Hermana,Hermano
+from django.contrib import admin
 
 urlpatterns = [
 
-     path('',views.Incio),
-     path('Mama', views.Mama),
-     path('Hermana',views.Hermana),
-     path('Hermano',views.Hermano),
-     path('Mascota',views.Novia),
-     path('Novia',views.Mascota),
+     path('Mama/', Mama),
+     path('Hermana/',Hermana),
+     path('Hermano/',Hermano),
+     #path('Mascota',views.Novia),
+     #path('Novia',views.Mascota),
 
 ]
